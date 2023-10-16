@@ -54,7 +54,7 @@ class Visitor {
   public function getDate($format = 'us'): string 
   {
     if($format === 'br'){
-      return date('d/m/Y h:i:s', strtotime($this->date));
+      return date('d/m/Y H:i:s', strtotime($this->date));
     }
     
     return $this->date;
