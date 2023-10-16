@@ -19,7 +19,7 @@
 
       <input type="radio" id="star2" class="star" name="rating" value="2">
       <label for="star2">☆</label>
-
+      
       <input type="radio" id="star1" class="star" name="rating" value="1">
       <label for="star1">☆</label>
 
