@@ -119,6 +119,16 @@ button:hover, .btn-back:hover {
     font-size: 2.5rem;
 }
 
+.h1-mb {
+    background-color: #37f308;
+    color: #073402;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 20vw;
+    margin: 5rem auto;
+}
+
 .btn-back-send {
     display: flex;
     justify-content: center;
