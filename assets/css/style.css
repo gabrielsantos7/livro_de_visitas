@@ -162,7 +162,7 @@ td{
 
 .rating {
     display: flex;
-    padding: 2rem 0rem;
+    padding: 1.6rem 0rem;
 }
 
 .rating input {
@@ -171,22 +171,25 @@ td{
 
 .rating label {
     cursor: pointer;
-    width: 30px;
-    height: 30px;
+    width: 3.5rem;
+    height: 3.5rem;
     text-align: center;
     line-height: 30px;
     font-weight: 100;
 }
 
+.rating input:checked+label:before,
+.rating input:checked~label:before,
 .rating input:checked+label,
 .rating input:checked~label {
-    color: rgb(233, 233, 17);
+    color: #e9e911;
+    content: "\2605";
 }
 
 .rating>label {
     position: relative;
     font-size: 4rem;
-    color: yellow;
+    color: #ffff00;
 }
 
 .rating>label:hover:before,

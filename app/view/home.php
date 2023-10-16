@@ -10,17 +10,20 @@
     <div class="rating">
       <input type="radio" id="star5" class="star" name="rating" value="5">
       <label for="star5">☆</label>
+
       <input type="radio" id="star4" class="star" name="rating" value="4">
       <label for="star4">☆</label>
+
       <input type="radio" id="star3" class="star" name="rating" value="3">
       <label for="star3">☆</label>
+
       <input type="radio" id="star2" class="star" name="rating" value="2">
       <label for="star2">☆</label>
+
       <input type="radio" id="star1" class="star" name="rating" value="1">
       <label for="star1">☆</label>
 
     </div>
-
 
     <button type="submit">Enviar</button>
   </form>

@@ -7,6 +7,10 @@ Arquivo principal do PHP. Redireciona as rotas para o Controller
 require "./vendor/autoload.php";
 require "./config.php";
 
+date_default_timezone_set('America/Bahia');
+
+//echo date('d/m/Y H:i:s');
+
 $url = $_GET['url'] ?? "/";
 
 use \Ifba\Visitantes\controller\VisitorController;
