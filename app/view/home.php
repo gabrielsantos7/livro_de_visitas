@@ -3,8 +3,9 @@
   <h2 id="h2">Cadastro de Visitantes</h2>
 
   <form action=" salvar" method="POST" id="form">
-    <label for="name">Nome completo:</label>
-    <input type="text" id="name" name="name" required><br><br>
+  <label for="name">Nome completo:</label>
+  <input type="text" id="name" name="name" required>
+  <p id="p-alert" class="invisible">O nome deve conter pelo menos 3 caracteres.</p><br><br>
 
     <label for="rating">Nota do Evento:</label>
     <div class="rating">

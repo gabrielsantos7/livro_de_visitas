@@ -23,6 +23,10 @@ function hideAlert() {
     input.style.border = "2px solid #003cffaa";
 }
 
+function showBorderGreen() {
+    input.style.border = "2px solid green";
+}
+
 function capitalizeFirstLetter() {
     hideAlert();
     let inputValue = input.value;
@@ -44,10 +48,11 @@ function validateInput(event) {
 
     let inputValue = input.value;
 
-    if (inputValue.length <= 3) {
+    if (inputValue.length < 3) {
         showAlert();
         event.preventDefault();
     } else {
         hideAlert();
+        showBorderGreen();
     }
 }

@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/*********** Resets **************/
+
 *, *::after, *::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+/*********** Base config **************/
 
 html {
     font-size: 62.5% !important; /* 10px */
@@ -17,6 +21,8 @@ body {
     font-family: 'Encode Sans Condensed', sans-serif !important;
     height: 100vh;
 }
+
+/*********** Header **************/
 
 header {
     background-color: #003cff;
@@ -70,6 +76,8 @@ p#rota {
     text-align: center;
     font-size: 2rem;
 }
+
+/*********** Form **************/
 
 form {
     max-width: 40rem;
@@ -135,6 +143,8 @@ button:hover, .btn-back:hover {
     align-self: center;
 }
 
+/*********** Table **************/
+
 table#list-visitors{
     margin: 50px auto;
     width: 60vw;
@@ -168,6 +178,16 @@ td{
     padding: 8px;
     text-align: center;
     vertical-align: middle;
+}
+
+/*********** Validation elements **************/
+
+p#p-alert {
+    color: rgb(204, 31, 31);
+}
+
+p.invisible {
+    display: none;
 }
 
 /*********** Stars **************/
