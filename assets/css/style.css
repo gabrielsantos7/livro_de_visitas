@@ -200,6 +200,8 @@ p.invisible {
 
 .rating {
     display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
     padding: 1.6rem 0rem;
 }
 
