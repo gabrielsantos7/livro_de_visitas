@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+
+@font-face {
+    font-family: "Encode Sans Condensed";
+    src: url("../fonts/Encode_Sans/static/EncodeSans-SemiBold.ttf")
+    format("truetype");
+}
 
 /*********** Resets **************/
 
