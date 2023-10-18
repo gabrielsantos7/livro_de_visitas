@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+
+@font-face {
+    font-family: "Encode Sans Condensed";
+    src: url("../fonts/Encode_Sans/static/EncodeSans-SemiBold.ttf")
+    format("truetype");
+}
+
+/*********** Resets **************/
 
 *, *::after, *::before {
     margin: 0;
@@ -6,6 +14,8 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+/*********** Base config **************/
 
 html {
     font-size: 62.5% !important; /* 10px */
@@ -17,6 +27,8 @@ body {
     font-family: 'Encode Sans Condensed', sans-serif !important;
     height: 100vh;
 }
+
+/*********** Header **************/
 
 header {
     background-color: #003cff;
@@ -70,6 +82,8 @@ p#rota {
     text-align: center;
     font-size: 2rem;
 }
+
+/*********** Form **************/
 
 form {
     max-width: 40rem;
@@ -135,6 +149,8 @@ button:hover, .btn-back:hover {
     align-self: center;
 }
 
+/*********** Table **************/
+
 table#list-visitors{
     margin: 50px auto;
     width: 60vw;
@@ -170,10 +186,22 @@ td{
     vertical-align: middle;
 }
 
+/*********** Validation elements **************/
+
+p#p-alert {
+    color: rgb(204, 31, 31);
+}
+
+p.invisible {
+    display: none;
+}
+
 /*********** Stars **************/
 
 .rating {
     display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
     padding: 1.6rem 0rem;
 }
 

@@ -6,7 +6,8 @@ Controller principal que chama as páginas de acordo com a rota
 
 namespace Ifba\Visitantes\controller;
 
-use Ifba\visitantes\model\DAO\VisitorDAO;
+use Ifba\Visitantes\model\DAO\VisitorDAO;
+use Ifba\Visitantes\model\entities\Visitor;
 
 class VisitorController{
 
@@ -18,22 +19,27 @@ class VisitorController{
     public function listVisitors()
     {
         //require "./app/model/DAO/VisitorDAO.php";
-        $dao = new \Ifba\Visitantes\model\DAO\VisitorDAO;
+        $dao = new VisitorDAO;
         $visitors = $dao->findAll();
-        $data = [
-            'titulo' => TITLE,
-            'visitors' => $visitors
-        ];
+        var_dump($visitors);
+
+        require "util.php";
+        createCSV($visitors);
+        // $data = [
+        //     'titulo' => TITLE,
+        //     'visitors' => $visitors
+        // ];
         require "./app/view/list_visitors.php";
         //view("listarVisitas", $data);
     }
+    
     public function save()
     {
         if(empty($_POST['name']) || empty($_POST['rating'])) {
             header('Location: cadastrar');
             exit;
         }
-        $visitor = new \Ifba\Visitantes\model\entities\Visitor();
+        $visitor = new Visitor();
         $visitor->setName($_POST['name'] ?? '');
         $visitor->setRating($_POST['rating'] ?? '');
         $visitor->setDate();

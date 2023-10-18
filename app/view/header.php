@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +9,12 @@
   <script src="https://unpkg.com/scrollreveal"></script>
   <title>Livro de Visitas</title>
 </head>
+
 <body>
   <header>
     <nav>
       <ul>
-        <li><a href="<?=BASEPATH?>" id="linkHome">Home</a></li>
+        <li><a href="<?=BASEPATH?>" id="linkHome">Cadastrar</a></li>
         <li><a href="<?=BASEPATH . '/visitantes'?>" id="linkLista"> Listar assinaturas</a></li>
       </ul>
     </nav>
