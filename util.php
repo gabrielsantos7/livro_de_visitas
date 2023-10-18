@@ -9,7 +9,7 @@ function createCSV(array $data, $filename = 'visitantes.csv')
     $file = fopen($filename, 'w');
 
     // Escreve o cabeçalho (nomes das colunas)
-    $header = ['Id', 'Nome', 'Avaliação', 'Data e hora']; // Defina os nomes das colunas
+    $header = ['Id', 'Nome', 'Nota', 'Data e hora']; // Defina os nomes das colunas
     fputcsv($file, $header);
 
     // Escreve os dados
