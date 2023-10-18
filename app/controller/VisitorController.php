@@ -21,8 +21,7 @@ class VisitorController{
         //require "./app/model/DAO/VisitorDAO.php";
         $dao = new VisitorDAO;
         $visitors = $dao->findAll();
-        var_dump($visitors);
-
+        
         require "util.php";
         createCSV($visitors);
         // $data = [
@@ -30,6 +29,7 @@ class VisitorController{
         //     'visitors' => $visitors
         // ];
         require "./app/view/list_visitors.php";
+        echo '<h3>A planilha com os registros foi gerada!</h3>';
         //view("listarVisitas", $data);
     }
     
